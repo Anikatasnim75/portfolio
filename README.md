@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Senior Product Manager & Business Analyst portfolio - 5+ years driving product strategy, roadmaps, and digital transformation in FinTech, SaaS, ERP, and E-commerce.">
+    <meta name="description" content="Senior Product Manager & Business Analyst portfolio - 3+ years driving product strategy, roadmaps, and digital transformation in FinTech, SaaS, ERP, and E-commerce.">
     <meta name="keywords" content="Product Manager, Business Analyst, FinTech, SaaS, Agile, SDLC, Product Strategy, Roadmap">
     <meta name="author" content="Product Manager & Business Analyst Professional">
     
@@ -252,7 +252,7 @@
                 mapUrl: "https://maps.google.com/maps?q=60+Feet+Road,+Mirpur+2,+Dhaka,+Bangladesh&t=&z=15&ie=UTF8&iwloc=&output=embed"
             },
             integrations: {
-                googleScriptUrl: "https://script.google.com/macros/s/AKfycbwGhN0-Fkbcz8kJIrmdhp4J4peLfeAi2txy4kv5oOMDm0xY4Yb1ZszWDL0zuVzpREM-/exec", // Add Google Apps Script Web App URL here
+                googleScriptUrl: "https://script.google.com/macros/s/AKfycbwjkEbCzmnmiD8S2ezxwdPDdkFEiy7eqCSUS5TPj5NTQbRW0gQLFMqYz8QzKR_2cG6_/exec", // Add Google Apps Script Web App URL here
                 telegramBotToken: "8175907217:AAH8wyej0lBnoHdoRfWEBgKt5tYXeWxdRRE",
                 telegramChatId: "6990126463"
             }
@@ -264,7 +264,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             <a href="#" class="flex items-center gap-3 group">
                 <span class="w-10 h-10 rounded-xl bg-brand-500/20 border border-brand-500/40 flex items-center justify-center text-brand-500 font-bold text-xl group-hover:scale-105 transition-transform">
-                    AV
+                    AT
                 </span>
                 <span id="nav-brand-name" class="font-bold text-lg tracking-tight text-slate-100 group-hover:text-brand-500 transition-colors">
                     Anika Tasnim
@@ -776,7 +776,7 @@
 
             document.querySelectorAll(".reveal-element").forEach(el => revealObserver.observe(el));
 
-            // 9. Contact Form Submission Handling (Telegram & Google Script Integration)
+            // 9. Contact Form Submission Handling (Google Script URL Encoding Fix)
             const contactForm = document.getElementById("contact-form");
             const formSubmitBtn = document.getElementById("form-submit-btn");
             const formStatus = document.getElementById("form-status");
@@ -796,13 +796,19 @@
                 const payload = { name, phone, email, message, timestamp: new Date().toISOString() };
 
                 try {
-                    // Google Apps Script Dispatch
+                    // Google Apps Script Dispatch via URL-encoded form data
                     if (siteData.integrations.googleScriptUrl) {
+                        const formData = new URLSearchParams();
+                        formData.append("name", name);
+                        formData.append("phone", phone);
+                        formData.append("email", email);
+                        formData.append("message", message);
+
                         fetch(siteData.integrations.googleScriptUrl, {
                             method: "POST",
                             mode: "no-cors",
-                            headers: { "Content-Type": "application/json" },
-                            body: JSON.stringify(payload)
+                            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                            body: formData.toString()
                         });
                     }
 
