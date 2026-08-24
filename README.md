@@ -228,6 +228,49 @@
                     githubUrl: "#"
                 }
             ],
+            certifications: [
+                { name: "Professional Diploma in Agile and Scrum", institution: "Udemy", icon: "fa-certificate" },
+                { name: "Data Science", institution: "Data Solution 360", icon: "fa-chart-pie" },
+                { name: "Master Trainer Training Program", institution: "Election Observer Consortium", icon: "fa-chalkboard-user" },
+                { name: "Corporate Management & Professional Behavior", institution: "JUST", icon: "fa-user-tie" }
+            ],
+            organizationalExperiencesImage: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgL6AjsESV6pLmXSy1CMpMw4ZeelXLY9Ps48qdr2HFeFovOVqyor0MhI19fAa8EY2oInI0DuMsZekFGxZlMDOJSpJURd9tos4STJsFlJ5fUyZYnegPw58hbCI02_3e5d-5zGBfahPOkMDjchTF6Y11x455r7c9fy0NjXTbgSj98Tltv-A7AggXOwVx6QMLy/s1600/ChatGPT%20Image%20Jun%2027,%202026,%2012_32_34%20AM.png",
+            organizationalExperiences: [
+                {
+                    duration: "Jun 2021 — Dec 2022",
+                    designation: "Project Analyst",
+                    organization: "Jamal Nazrul Islam Astronomy Club, JUST",
+                    responsibilities: [
+                        "Led astronomy-focused projects supported by the University of Toronto, Ontario, Canada, ensuring financial and logistical efficiency.",
+                        "Developed observation, communication, and analytical skills through hands-on project execution and community engagement.",
+                        "Organized educational initiatives to promote astronomy awareness among school students across Bangladesh.",
+                        "Facilitated workshops and interactive sessions, enhancing students' understanding of astronomical concepts.",
+                        "Managed project resources and timelines to ensure successful completion of initiatives aimed at spreading scientific knowledge."
+                    ]
+                },
+                {
+                    duration: "Feb 2022 — Apr 2024",
+                    designation: "Vice President",
+                    organization: "JUST Debate Club",
+                    responsibilities: [
+                        "Spearheaded club governance, strategic planning, and overall executive management to foster an active debating culture.",
+                        "Directed national and intra-university debate competitions, managing event operations, logistics, and judge panels.",
+                        "Mentored junior debaters in critical thinking, public speaking, structured argumentation, and policy analysis.",
+                        "Represented the club in regional debating forums and forged key partnerships across university organizations."
+                    ]
+                },
+                {
+                    duration: "Sep 2020 — Aug 2021",
+                    designation: "Deputy Chief of Event Management",
+                    organization: "Hult Prize at Jashore University of Science & Technology",
+                    responsibilities: [
+                        "Served as Deputy Chief of Event Management, overseeing ground logistics, event operations, and virtual execution.",
+                        "Acted as a Department Ambassador to drive campus-wide engagement and student recruitment for social business ideas.",
+                        "Hosted live virtual sessions and interactive panel discussions featuring guest speakers and social entrepreneurs.",
+                        "Coordinated cross-functional volunteer teams to execute successful, high-impact entrepreneurship sessions."
+                    ]
+                }
+            ],
             testimonials: [
                 {
                     quote: "Anika is highly energetic, organized, and always ready to take on new challenges. One of her strongest qualities is her self-awareness — she clearly understands her limitations and plans her work accordingly, which helps her stay focused and consistently deliver successful outcomes. She brings a positive attitude, strong ownership, and reliability to the team",
@@ -252,7 +295,7 @@
                 mapUrl: "https://maps.google.com/maps?q=60+Feet+Road,+Mirpur+2,+Dhaka,+Bangladesh&t=&z=15&ie=UTF8&iwloc=&output=embed"
             },
             integrations: {
-                googleScriptUrl: "https://script.google.com/macros/s/AKfycbwjkEbCzmnmiD8S2ezxwdPDdkFEiy7eqCSUS5TPj5NTQbRW0gQLFMqYz8QzKR_2cG6_/exec", // Add Google Apps Script Web App URL here
+                googleScriptUrl: "https://script.google.com/macros/s/AKfycbwjkEbCzmnmiD8S2ezxwdPDdkFEiy7eqCSUS5TPj5NTQbRW0gQLFMqYz8QzKR_2cG6_/exec",
                 telegramBotToken: "8175907217:AAH8wyej0lBnoHdoRfWEBgKt5tYXeWxdRRE",
                 telegramChatId: "6990126463"
             }
@@ -277,6 +320,8 @@
                 <a href="#experience" class="text-slate-300 hover:text-brand-500 transition-colors">Experience</a>
                 <a href="#skills" class="text-slate-300 hover:text-brand-500 transition-colors">Skills</a>
                 <a href="#projects" class="text-slate-300 hover:text-brand-500 transition-colors">Projects</a>
+                <a href="#certifications" class="text-slate-300 hover:text-brand-500 transition-colors">Certifications</a>
+                <a href="#organizational" class="text-slate-300 hover:text-brand-500 transition-colors">Organizational</a>
                 <a href="#contact" class="px-5 py-2.5 rounded-full bg-brand-500 hover:bg-brand-600 text-white font-semibold transition-all shadow-lg shadow-brand-500/20 hover:shadow-brand-500/40">
                     Get in Touch
                 </a>
@@ -294,6 +339,8 @@
             <a href="#experience" class="mobile-nav-link block text-base font-medium text-slate-200 hover:text-brand-500">Experience</a>
             <a href="#skills" class="mobile-nav-link block text-base font-medium text-slate-200 hover:text-brand-500">Skills</a>
             <a href="#projects" class="mobile-nav-link block text-base font-medium text-slate-200 hover:text-brand-500">Projects</a>
+            <a href="#certifications" class="mobile-nav-link block text-base font-medium text-slate-200 hover:text-brand-500">Certifications</a>
+            <a href="#organizational" class="mobile-nav-link block text-base font-medium text-slate-200 hover:text-brand-500">Organizational</a>
             <a href="#contact" class="mobile-nav-link inline-block w-full text-center py-3 rounded-xl bg-brand-500 text-white font-semibold">Get in Touch</a>
         </div>
     </header>
@@ -303,11 +350,9 @@
 
         <!-- Hero Section -->
         <section class="min-h-[calc(100vh-80px)] flex items-center justify-center relative overflow-hidden py-16 px-4 sm:px-6 lg:px-8">
-            <!-- Subtle Radial Gradient Background -->
             <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-brand-500/10 rounded-full blur-3xl pointer-events-none"></div>
             
             <div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
-                
                 <div class="lg:col-span-7 space-y-6 text-center lg:text-left reveal-element">
                     <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-500/10 border border-brand-500/20 text-brand-500 text-sm font-medium">
                         <span class="w-2 h-2 rounded-full bg-brand-500 animate-pulse"></span>
@@ -326,14 +371,12 @@
                         Spearheading product vision, SaaS lifecycle execution, and business strategy with over 3+ years of measurable impact in FinTech and Enterprise ecosystems.
                     </p>
 
-                    <!-- Dynamic Typing Visual Helper -->
                     <div class="text-sm font-mono text-brand-500 flex items-center justify-center lg:justify-start gap-2">
                         <i class="fa-solid fa-code text-xs"></i>
                         <span>Focus:</span>
                         <span id="typing-text" class="border-r-2 border-brand-500 pr-1"></span>
                     </div>
 
-                    <!-- CTA Buttons & Social -->
                     <div class="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
                         <a href="#projects" class="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-brand-500 hover:bg-brand-600 text-white font-semibold transition-all shadow-lg shadow-brand-500/25 hover:shadow-brand-500/40 text-center">
                             View Work <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
@@ -359,7 +402,6 @@
                     </div>
                 </div>
 
-                <!-- Hero Image -->
                 <div class="lg:col-span-5 flex justify-center reveal-element">
                     <div class="relative w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96">
                         <div class="absolute inset-0 rounded-3xl bg-gradient-to-tr from-brand-500 to-cyan-400 opacity-20 blur-xl"></div>
@@ -414,10 +456,7 @@
                 </p>
             </div>
 
-            <!-- Two Column Desktop Layout Architecture -->
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-                
-                <!-- Left Column: Portrait Photograph (40% width approx: col-span-5) -->
                 <div class="lg:col-span-5 reveal-element">
                     <div class="sticky top-28">
                         <div class="relative group rounded-3xl overflow-hidden border border-slate-800 bg-slate-900 shadow-2xl">
@@ -434,13 +473,11 @@
                     </div>
                 </div>
 
-                <!-- Right Column: Timeline Content (60% width approx: col-span-7) -->
                 <div class="lg:col-span-7 space-y-10 reveal-element">
                     <div id="experience-container" class="relative pl-6 sm:pl-8 border-l-2 border-slate-800 space-y-12">
                         <!-- Dynamic Experience Cards Injected Here -->
                     </div>
                 </div>
-
             </div>
         </section>
 
@@ -470,6 +507,52 @@
             </div>
         </section>
 
+        <!-- Professional Trainings & Certifications Section -->
+        <section id="certifications" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16 reveal-element">
+                <h2 class="text-3xl sm:text-4xl font-bold text-white">Professional Trainings & Certifications</h2>
+                <p class="text-slate-400 mt-3">Continuous learning programs and credentials acquired to build industry expertise.</p>
+            </div>
+
+            <div id="certifications-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 reveal-element">
+                <!-- Dynamic Certification Cards -->
+            </div>
+        </section>
+
+        <!-- Organizational Experience Section -->
+        <section id="organizational" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+            <div class="mb-12 reveal-element">
+                <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">Organizational Experience</h2>
+                <p class="mt-4 text-slate-400 text-lg max-w-3xl leading-relaxed">
+                    Leadership roles, event operations, and community initiatives across university and global organizations.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+                <div class="lg:col-span-5 reveal-element">
+                    <div class="sticky top-28">
+                        <div class="relative group rounded-3xl overflow-hidden border border-slate-800 bg-slate-900 shadow-2xl">
+                            <img id="org-experience-portrait-img" src="" alt="Organizational Leadership Portrait" class="w-full h-[450px] lg:h-[550px] object-cover transition-transform duration-700 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+                            <div class="absolute bottom-6 left-6 right-6">
+                                <span class="px-3 py-1 rounded-full bg-brand-500/20 text-brand-500 text-xs font-semibold border border-brand-500/30">
+                                    Community & Leadership
+                                </span>
+                                <h4 class="text-xl font-bold text-white mt-2">Impact & Engagement</h4>
+                                <p class="text-sm text-slate-300">Building communities and driving youth leadership programs.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7 space-y-10 reveal-element">
+                    <div id="org-experience-container" class="relative pl-6 sm:pl-8 border-l-2 border-slate-800 space-y-12">
+                        <!-- Dynamic Organizational Experience Cards Injected Here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Testimonials Section -->
         <section class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
             <div class="glass-card rounded-3xl p-8 sm:p-12 border border-slate-800/80 reveal-element">
@@ -483,7 +566,6 @@
         <!-- Contact Section -->
         <section id="contact" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-                
                 <div class="lg:col-span-5 reveal-element space-y-6">
                     <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">Let's Connect</h2>
                     <p class="text-slate-400 text-lg">
@@ -523,7 +605,6 @@
                     </div>
                 </div>
 
-                <!-- Contact Form -->
                 <div class="lg:col-span-7 reveal-element">
                     <form id="contact-form" class="glass-card rounded-3xl p-8 border border-slate-800 space-y-6">
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -570,11 +651,11 @@
     <footer class="border-t border-slate-800/80 bg-slate-950 py-12 px-4 sm:px-6 lg:px-8">
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
             <div>
-                <span id="footer-name" class="font-bold text-lg text-white">Alex Vance</span>
+                <span id="footer-name" class="font-bold text-lg text-white">Anika Tasnim</span>
                 <p id="footer-designation" class="text-sm text-slate-400">Product Manager | Business Analyst</p>
             </div>
             <div class="text-sm text-slate-500 text-center md:text-right">
-                © <span id="current-year"></span> <span id="footer-copyright-name">Alex Vance</span>. All Rights Reserved.
+                © <span id="current-year"></span> <span id="footer-copyright-name">Anika Tasnim</span>. All Rights Reserved.
             </div>
         </div>
     </footer>
@@ -649,7 +730,6 @@
             const expContainer = document.getElementById("experience-container");
             expContainer.innerHTML = siteData.experiences.map(exp => `
                 <div class="relative group">
-                    <!-- Timeline Node Marker -->
                     <span class="absolute -left-[31px] sm:-left-[39px] top-1.5 w-4 h-4 rounded-full bg-slate-900 border-2 border-brand-500 group-hover:scale-125 transition-transform"></span>
 
                     <div class="flex flex-wrap items-center gap-3 mb-2">
@@ -670,7 +750,6 @@
                         `).join('')}
                     </ul>
 
-                    <!-- Key Skills Badges -->
                     <div class="space-y-2">
                         <div class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Key Skills Applied</div>
                         <div class="flex flex-wrap gap-2">
@@ -707,7 +786,6 @@
             projectsContainer.innerHTML = siteData.projects.map(proj => `
                 <div class="glass-card rounded-2xl overflow-hidden border border-slate-800/80 flex flex-col justify-between group hover:border-brand-500/30 transition-all reveal-element">
                     <div>
-                        <!-- Project Image Wrapper with Dynamic Reveal Scroll -->
                         <div class="project-img-wrapper bg-slate-900">
                             <img src="${proj.image}" alt="${proj.title}">
                         </div>
@@ -739,7 +817,52 @@
                 </div>
             `).join('');
 
-            // 6. Render Testimonials
+            // 6. Render Professional Trainings & Certifications Section
+            const certsContainer = document.getElementById("certifications-container");
+            certsContainer.innerHTML = siteData.certifications.map(cert => `
+                <div class="glass-card rounded-2xl p-6 border border-slate-800/80 flex flex-col justify-between group hover:border-brand-500/40 transition-all">
+                    <div>
+                        <div class="w-10 h-10 rounded-xl bg-brand-500/10 border border-brand-500/20 text-brand-500 flex items-center justify-center text-lg mb-4 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid ${cert.icon}"></i>
+                        </div>
+                        <h3 class="text-base font-bold text-white group-hover:text-brand-500 transition-colors mb-2">${cert.name}</h3>
+                    </div>
+                    <div class="pt-4 border-t border-slate-800/60 flex items-center justify-between text-xs text-slate-400">
+                        <span>Institution</span>
+                        <span class="font-semibold text-slate-200">${cert.institution}</span>
+                    </div>
+                </div>
+            `).join('');
+
+            // 7. Render Organizational Experience Section
+            document.getElementById("org-experience-portrait-img").src = siteData.organizationalExperiencesImage;
+
+            const orgContainer = document.getElementById("org-experience-container");
+            orgContainer.innerHTML = siteData.organizationalExperiences.map(org => `
+                <div class="relative group">
+                    <span class="absolute -left-[31px] sm:-left-[39px] top-1.5 w-4 h-4 rounded-full bg-slate-900 border-2 border-brand-500 group-hover:scale-125 transition-transform"></span>
+
+                    <div class="flex flex-wrap items-center gap-3 mb-2">
+                        <span class="px-3 py-1 rounded-full bg-brand-500/10 border border-brand-500/20 text-brand-500 text-xs font-semibold">
+                            ${org.duration}
+                        </span>
+                        <span class="text-slate-400 text-sm font-medium">${org.organization}</span>
+                    </div>
+
+                    <h3 class="text-xl font-bold text-white mb-4">${org.designation}</h3>
+
+                    <ul class="space-y-2.5 text-slate-300 text-sm leading-relaxed">
+                        ${org.responsibilities.map(r => `
+                            <li class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-square-check text-brand-500 text-xs mt-1"></i>
+                                <span>${r}</span>
+                            </li>
+                        `).join('')}
+                    </ul>
+                </div>
+            `).join('');
+
+            // 8. Render Testimonials
             const testContainer = document.getElementById("testimonials-container");
             testContainer.innerHTML = siteData.testimonials.map(t => `
                 <div class="space-y-4">
@@ -752,7 +875,7 @@
                 </div>
             `).join('');
 
-            // 7. Mobile Menu Toggle
+            // 9. Mobile Menu Toggle
             const mobileMenuBtn = document.getElementById("mobile-menu-btn");
             const mobileMenu = document.getElementById("mobile-menu");
             mobileMenuBtn.addEventListener("click", () => {
@@ -763,7 +886,7 @@
                 link.addEventListener("click", () => mobileMenu.classList.add("hidden"));
             });
 
-            // 8. Scroll Reveal Observer
+            // 10. Scroll Reveal Observer
             const observerOptions = { threshold: 0.1, rootMargin: "0px 0px -50px 0px" };
             const revealObserver = new IntersectionObserver((entries, observer) => {
                 entries.forEach(entry => {
@@ -776,7 +899,7 @@
 
             document.querySelectorAll(".reveal-element").forEach(el => revealObserver.observe(el));
 
-            // 9. Contact Form Submission Handling (Google Script URL Encoding Fix)
+            // 11. Contact Form Submission Handling
             const contactForm = document.getElementById("contact-form");
             const formSubmitBtn = document.getElementById("form-submit-btn");
             const formStatus = document.getElementById("form-status");
@@ -793,10 +916,7 @@
                 formSubmitBtn.innerHTML = `<i class="fa-solid fa-spinner animate-spin"></i> Sending...`;
                 formStatus.classList.add("hidden");
 
-                const payload = { name, phone, email, message, timestamp: new Date().toISOString() };
-
                 try {
-                    // Google Apps Script Dispatch via URL-encoded form data
                     if (siteData.integrations.googleScriptUrl) {
                         const formData = new URLSearchParams();
                         formData.append("name", name);
@@ -812,7 +932,6 @@
                         });
                     }
 
-                    // Telegram Bot API Dispatch
                     if (siteData.integrations.telegramBotToken && siteData.integrations.telegramChatId) {
                         const tgText = `📬 *New Portfolio Inquiry*\n\n*Name:* ${name}\n*Phone:* ${phone}\n*Email:* ${email}\n*Message:* ${message}`;
                         await fetch(`https://api.telegram.org/bot${siteData.integrations.telegramBotToken}/sendMessage`, {
@@ -826,7 +945,6 @@
                         });
                     }
 
-                    // Success Feedback
                     formStatus.innerText = "Thank you! Your message has been received successfully.";
                     formStatus.className = "text-sm text-center text-emerald-400 font-medium block";
                     contactForm.reset();
