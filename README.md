@@ -307,9 +307,9 @@
     <header class="fixed top-0 left-0 right-0 z-50 glass-nav transition-all duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             <a href="#" class="flex items-center gap-3 group">
-                <span class="w-10 h-10 rounded-xl bg-brand-500/20 border border-brand-500/40 flex items-center justify-center text-brand-500 font-bold text-xl group-hover:scale-105 transition-transform">
-                    AT
-                </span>
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjX4DvRCa1w4nw7GJ8kOXVr4TYe6Trq3fgD6eBgXKYa5Oua08K9Ol0Nq9m9ebMb1FmTTo_viqm-hprrJsMRzimmTNuTRwsJkfUwbOondo0PmcbegyODg7S0VcEHuVNJVXLvuX13DYhzlKC3TUdJEYRUCzG4Pwr0K7quufntB16lzqZQWR1J7Q_YdVR9v9Vm/s1600/anikafavicon.png.png" 
+                     alt="Anika Tasnim Icon" 
+                     class="w-10 h-10 rounded-xl border border-brand-500/40 object-cover group-hover:scale-105 transition-transform">
                 <span id="nav-brand-name" class="font-bold text-lg tracking-tight text-slate-100 group-hover:text-brand-500 transition-colors">
                     Anika Tasnim
                 </span>
