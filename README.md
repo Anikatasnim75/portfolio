@@ -158,6 +158,7 @@
                 { category: "Technical & Methods", items: ["Agile/Scrum", "SQL & Analytics", "System Architecture", "UAT & QA Governance", "API Integration"] },
                 { category: "Domain Knowledge", items: ["FinTech Payments", "SaaS Platforms", "Enterprise ERP", "E-Commerce Engines", "Process Automation"] }
             ],
+            workExperienceImage: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjd6V_3el60dn0_fODXVuqVgIm34GqDPsjstJ2_G3fy6-SF80hzGg_p4JkcXC1eJ_SeMF7VGE1jxzoZRvg94PUSM8AXsfmM-YRiTdPka-v0ciq0GW9jrU40fWlu3bPzQWtwDzJhQqOJSEPKN4Zf5ceWKqsesaHb67MvO09bRVrhBfp9cMAZkWcbNMNa5bmY/s1600/AnikaTasnimWebsite.png",
             experienceSummary: "A results-driven technology professional with 3+ years of experience across FinTech, SaaS, ERP, and E-commerce, leading products and cross-functional initiatives from strategy and discovery through execution and scale.",
             experiences: [
                 {
@@ -251,7 +252,7 @@
                 {
                     duration: "Feb 2022 — Apr 2024",
                     designation: "Vice President",
-                    organization: "JUST Debate Club",
+                    organization: "Jashore University of Science & Technology Debate Club",
                     responsibilities: [
                         "Spearheaded club governance, strategic planning, and overall executive management to foster an active debating culture.",
                         "Directed national and intra-university debate competitions, managing event operations, logistics, and judge panels.",
@@ -460,7 +461,7 @@
                 <div class="lg:col-span-5 reveal-element">
                     <div class="sticky top-28">
                         <div class="relative group rounded-3xl overflow-hidden border border-slate-800 bg-slate-900 shadow-2xl">
-                            <img id="experience-portrait-img" src="" alt="Career Portrait" class="w-full h-[450px] lg:h-[550px] object-cover transition-transform duration-700 group-hover:scale-105">
+                            <img id="experience-portrait-img" src="" alt="Work Experience Portrait" class="w-full h-[450px] lg:h-[550px] object-cover transition-transform duration-700 group-hover:scale-105">
                             <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
                             <div class="absolute bottom-6 left-6 right-6">
                                 <span class="px-3 py-1 rounded-full bg-brand-500/20 text-brand-500 text-xs font-semibold border border-brand-500/30">
@@ -725,7 +726,7 @@
 
             // 3. Render Work Experience Section (Dynamic)
             document.getElementById("experience-summary").innerText = siteData.experienceSummary;
-            document.getElementById("experience-portrait-img").src = siteData.personalInfo.profileImage;
+            document.getElementById("experience-portrait-img").src = siteData.workExperienceImage;
 
             const expContainer = document.getElementById("experience-container");
             expContainer.innerHTML = siteData.experiences.map(exp => `
