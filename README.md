@@ -584,13 +584,14 @@
                             </div>
                         </div>
 
+                        <!-- LinkedIn Contact Item replacing Phone -->
                         <div class="flex items-center gap-4 p-4 rounded-2xl glass-card">
                             <div class="w-12 h-12 rounded-xl bg-brand-500/10 text-brand-500 flex items-center justify-center text-xl">
-                                <i class="fa-solid fa-phone"></i>
+                                <i class="fa-brands fa-linkedin-in"></i>
                             </div>
                             <div>
-                                <div class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Phone</div>
-                                <span id="contact-phone" class="text-white font-medium"></span>
+                                <div class="text-xs text-slate-400 uppercase tracking-wider font-semibold">LinkedIn</div>
+                                <a id="contact-linkedin" href="" target="_blank" class="text-white hover:text-brand-500 font-medium">Anika Tasnim</a>
                             </div>
                         </div>
 
@@ -686,7 +687,12 @@
             // Contact Info
             document.getElementById("contact-email").innerText = siteData.contact.email;
             document.getElementById("contact-email").href = `mailto:${siteData.contact.email}`;
-            document.getElementById("contact-phone").innerText = siteData.contact.phone;
+            
+            // Dynamic binding for LinkedIn contact element
+            const contactLinkedin = document.getElementById("contact-linkedin");
+            contactLinkedin.innerText = siteData.personalInfo.name;
+            contactLinkedin.href = siteData.socialLinks.linkedin;
+            
             document.getElementById("contact-address").innerText = siteData.contact.address;
             document.getElementById("google-map").src = siteData.contact.mapUrl;
 
